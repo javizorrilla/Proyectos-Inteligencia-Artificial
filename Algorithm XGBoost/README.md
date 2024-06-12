@@ -1,1 +1,7 @@
+From a given dataset with certain data about the people on board the Titanic, such as: the passenger ID, whether he survived or not, name, sex, age... It is requested:
 
+- **Reading and viewing the dataset**: The data set and the information of each of the rows and columns will be displayed.
+  
+- **Data preparation and cleaning**: Null values ​​contained in the selected data set will be checked. For each column ('Age', 'Embarked', 'Cabin') different techniques will be applied to eliminate null values. For age, these values ​​will be changed to the median; for embarked they will be changed to the most repeated value in the other rows; and the cabin column, containing almost 700 null values, will be removed from the dataset. Then, the values ​​of the 'Sex' variable will be converted from categorical to numeric and the 'Age' variable will be normalized. Finally, the name and ticket columns will be eliminated because they are irrelevant for the subsequent classification. These modifications will be saved in a new file created: "data_cleansing.csv".
+
+-**Model training with the XGBoost algorithm**: The test set is predicted and the classification report is output. Subsequently, the confusion matrix is ​​calculated and all columns are removed except for the passenger id and whether they survived or not. Then, the dataset is traversed with this pair of columns to see how many people died and how many survived. Finally, the dataset obtained is saved in the file "Titanic_Passenger_Survived.csv".
