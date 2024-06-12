@@ -1,4 +1,4 @@
-From a given dataset with certain data about the people on board the Titanic, such as: the passenger ID, whether he survived or not, name, sex, age... It is requested:
+From a given dataset with certain data about the people on board the Titanic, such as: the passenger ID, whether he survived or not, name, sex, age...
 
 - **Reading and viewing the dataset**: The data set and the information of each of the rows and columns will be displayed.
   
